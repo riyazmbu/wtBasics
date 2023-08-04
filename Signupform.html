@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        fieldset{
+            width: 50%;
+            margin:10% auto; 
+            
+            border-radius:5%;
+        }
+        body{
+            background-color: #F3F3FE
+        }
+        legend{
+            font-size: xx-large;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="/action_page.php">
+        <fieldset>
+        <legend>Course Registration</legend>
+        <img src="code.png" width="50%" height="90%" padding="100px" align=right alt="">
+        <label for="">First Name:</label><br><br>
+        <input type="text" required >
+        <br>
+        <br>
+        <label for="">Last Name:</label><br><br>
+        <input type="text" required>
+        <br>
+        <br>
+        <label for="">Email:</label><br><br>
+        <input type="text" required>
+        <br>
+        <br>
+        <label for="">Gender:</label><br><br>
+        <label>
+            <input type="radio" name="gender" value="male" required> Male
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female" required> Female
+        </label>
+        <br><br>
+    
+        <label for="">Mobile Number:</label><br><br>
+        <input type="number" minlength="10" required>
+        <br>
+        <br>
+
+        <span>Tech Languages:</span>
+        <label>
+            <input type="checkbox" name="languages" value="html"> HTML
+        </label>
+        <label>
+            <input type="checkbox" name="languages" value="css"> CSS
+        </label>
+        <label>
+            <input type="checkbox" name="languages" value="javascript"> JavaScript
+        </label>
+        <label>
+            <input type="checkbox" name="languages" value="python"> Python
+        </label>
+        <br><br>
+        <span>Select Plan:</span>
+        <select name="" id="">
+            <option value="" selected>12 Months Access -Rs.2999</option>
+            <option value="">6 Months Access -Rs.1499</option>
+            <option value="">1 Month Access -Rs.499</option>
+        </select>
+        <br><br>
+        <label for="">Password :</label><br><br>
+        <input type="password" required >
+        <br>
+        <br>
+        <label for="">Confirm Password:</label><br><br>
+        <input type="password" required>
+        <br>
+        <br>
+        <input type="checkbox" name="" id="" required>
+        <label for="">I agree to the Terms and Conditions</label>
+        <br>
+        <br>
+        <input type="submit" >
+        <input type="reset">
+    </fieldset>
+    </form>
+</body>
+</html>
